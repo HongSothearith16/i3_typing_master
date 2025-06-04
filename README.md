@@ -4,7 +4,7 @@
 
 - **Landing Page** with navigation bar
 - **Typing Page** to practice typing
-- **Login** and **Logout** pages
+- **Login** and **Register** pages
 - **About Us**
 - **User reset password page**
 - **User test result**
