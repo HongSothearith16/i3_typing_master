@@ -56,13 +56,6 @@ h1 {
 .typing-input:focus {
     background: #222b3a;
 }
-.test-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 18px;
-    font-size: 1rem;
-    color: #b0b8c1;
-}
 .btn {
     background: #3e83ff;
     color: #fff;
@@ -78,7 +71,7 @@ h1 {
 .btn:hover {
     background: #265bb7;
 }
-/* Add to TypingPage.css */
+
 .back-btn {
     position: absolute;
     top: 30px;
@@ -97,21 +90,5 @@ h1 {
     background: #265bb7;
 }
 .typing-container {
-    position: relative; /* Ensure .back-btn is positioned relative to this */
-}
-.result-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-    background: #23242a;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 1.1rem;
-}
-.result-list li {
-    padding: 8px 0;
-    border-bottom: 1px solid #333;
-}
-.result-list li:last-child {
-    border-bottom: none;
+    position: relative;
 }

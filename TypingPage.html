@@ -7,69 +7,25 @@
     <link rel="stylesheet" href="/i3_typing_master/CSS/TypingPage.css">
 </head>
 <body>
+    <a href="FirstPage.html" class="back-btn">Back to Home</a>
     <div class="typing-container">
         <h1>Typing Test</h1>
         <div class="test-box">
             <div class="test-text" id="testText">
-                Midterm Typing Test
+                Typing Master Test
             </div>
             <textarea id="userInput" class="typing-input" placeholder="Start typing here..." rows="3"></textarea>
-            <div class="test-info">
-                <span id="timer">Time: 0s</span>
-                <span id="wpm">WPM: 0</span>
-                <span id="accuracy">Accuracy: 100%</span>
-            </div>
             <button class="btn" id="restartBtn">Restart</button>
         </div>
     </div>
     <script>
-        // Simple typing test logic
-        const testText = document.getElementById('testText').textContent;
-        const userInput = document.getElementById('userInput');
-        const timerEl = document.getElementById('timer');
-        const wpmEl = document.getElementById('wpm');
-        const accuracyEl = document.getElementById('accuracy');
         const restartBtn = document.getElementById('restartBtn');
-        let timer = 0, interval = null, started = false;
-
-        function startTimer() {
-            if (!started) {
-                started = true;
-                interval = setInterval(() => {
-                    timer++;
-                    timerEl.textContent = `Time: ${timer}s`;
-                }, 1000);
-            }
-        }
-
         function resetTest() {
             userInput.value = '';
-            timer = 0;
-            started = false;
-            timerEl.textContent = 'Time: 0s';
-            wpmEl.textContent = 'WPM: 0';
-            accuracyEl.textContent = 'Accuracy: 100%';
             clearInterval(interval);
         }
-
-        userInput.addEventListener('input', () => {
-            startTimer();
-            const input = userInput.value;
-            // WPM calculation
-            const words = input.trim().split(/\s+/).length;
-            const minutes = timer / 60 || 1/60;
-            const wpm = Math.round(words / minutes);
-            wpmEl.textContent = `WPM: ${isNaN(wpm) ? 0 : wpm}`;
-            // Accuracy calculation
-            let correct = 0;
-            for (let i = 0; i < input.length; i++) {
-                if (input[i] === testText[i]) correct++;
-            }
-            const accuracy = input.length ? Math.round((correct / input.length) * 100) : 100;
-            accuracyEl.textContent = `Accuracy: ${accuracy}%`;
-        });
-
         restartBtn.addEventListener('click', resetTest);
+
     </script>
 </body>
 </html>
