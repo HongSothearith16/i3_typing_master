@@ -16,27 +16,7 @@
 - HTML
 - CSS
 - JAVASCRIPT(in HTML)
-  
-## 📁 Project Structure
-i3_typing_master/
-├── FirstPage.html # Landing page
-├── typing.html # Typing practice page
-├── login.html # Login page
-├── Register.html # Register page
-├── logout.html # Logout page
-├── Reset.html # Reset password page
-├── AboutUs.html # About Us page
-├── Result.html # User test result page
-├── css/
-│ └── FirstPage.css
-│ └── TypingPage.css
-│ └── AboutUsPage.css
-│ └── Login.css
-│ └── Register.css
-│ └── Logout.css
-│ └── Reset.css
-│ └── Result.css
-└── README.md #Project documentation
+
 ## Author
 HONG Sothearith (I3-GIC)
 ## 🚀 How to Run the Project Locally
