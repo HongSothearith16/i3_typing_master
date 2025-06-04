@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #e6e0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  height: 90vh;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel {
+  width: 50%;
+  background: linear-gradient(135deg, #5b5be0, #6c63ff);
+  color: white;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.left-panel h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.left-panel h2 span {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.left-panel img {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.right-panel {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  width: 100%;
+}
+
+.signup-form h2 {
+  color: #5b5be0;
+  margin-bottom: 20px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.name-fields input {
+  flex: 1;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.checkbox {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+.signup-btn {
+  width: 100%;
+  background-color: #7a6ff1;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #888;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.google-btn,
+.facebook-btn {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signin-link {
+  font-size: 14px;
+  text-align: center;
+}
+
+.signin-link a {
+  color: #5b5be0;
+  text-decoration: none;
+}
+.top-left-back {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  font-size: 16px;
+  color: #5b5be0;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1000;
+  transition: color 0.2s ease;
+}
+
+.top-left-back:hover {
+  color: #372ee0;
+  text-decoration: underline;
+}
