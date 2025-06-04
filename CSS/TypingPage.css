@@ -1,0 +1,117 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.typing-container {
+    background: rgba(30, 30, 40, 0.95);
+    padding: 40px 32px;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 24px;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: #3e83ff;
+}
+
+.test-box {
+    background: #181920;
+    border-radius: 8px;
+    padding: 40px 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+.test-text {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.typing-input {
+    width: 100%;
+    height: 400px;;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    background: #23242a;
+    color: #fff;
+    outline: none;
+    resize: none;
+    box-shadow: 0 1px 4px rgba(62,131,255,0.08);
+    transition: background 0.2s;
+}
+.typing-input:focus {
+    background: #222b3a;
+}
+.test-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    color: #b0b8c1;
+}
+.btn {
+    background: #3e83ff;
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.btn:hover {
+    background: #265bb7;
+}
+/* Add to TypingPage.css */
+.back-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: #3e83ff;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.2s;
+    z-index: 10;
+}
+.back-btn:hover {
+    background: #265bb7;
+}
+.typing-container {
+    position: relative; /* Ensure .back-btn is positioned relative to this */
+}
+.result-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    background: #23242a;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.result-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+}
+.result-list li:last-child {
+    border-bottom: none;
+}
