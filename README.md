@@ -18,6 +18,7 @@
 - JAVASCRIPT(in HTML)
   
 ## 📁 Project Structure
+i3_typing_master/
 ├── FirstPage.html # Landing page
 ├── typing.html # Typing practice page
 ├── login.html # Login page
@@ -36,14 +37,13 @@
 │ └── Reset.css
 │ └── Result.css
 └── README.md #Project documentation
-
+## Author
+HONG Sothearith (I3-GIC)
 ## 🚀 How to Run the Project Locally
 ### 1. Clone or Download the Project
 
 ```bash
 git clone https://github.com/HongSothearith16/i3_typing_master.git
 
-## Author
-HONG Sothearith (I3-GIC)
 
 
